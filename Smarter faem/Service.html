@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - SmartFarm</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      flex: 1;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #2d6a4f;
+      padding: 15px;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2d6a4f;
+    }
+
+    /* Search bar */
+    .search-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .search-bar input,
+    .search-bar select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .search-bar button {
+      background: #2d6a4f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background: #1b4332;
+    }
+
+    /* Service Cards */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: #2d6a4f;
+    }
+
+    .card p {
+      flex: 1;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .rating {
+      color: #f4a261;
+      font-size: 14px;
+    }
+
+    .card button {
+      background: #2d6a4f;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background: #1b4332;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2d6a4f;
+      color: white;
+      margin-top: auto;
+    }
+
+    /* Responsive Nav */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #2d6a4f;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 15px;
+        border-radius: 6px;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">SmartFarm</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Service.html">Services</a></li>
+          <li><a href="Post.html">Post a Job</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section>
+      <h2>Browse Services</h2>
+
+      <!-- Search & Filters -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search by keyword...">
+        <select>
+          <option value="">All Categories</option>
+          <option value="fertilization">Fertilization</option>
+          <option value="harvesting">Harvesting</option>
+          <option value="irrigation">Irrigation</option>
+          <option value="pest-control">Pest Control</option>
+          <option value="machinery">Machinery Rental</option>
+        </select>
+        <button>Search</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid">
+        <div class="card">
+          <h3>Fertilization Delivery</h3>
+          <p>Professional fertilization with high-quality materials, fast and efficient.</p>
+          <div class="price">$100 / acre</div>
+          <div class="rating">⭐⭐⭐⭐☆ (24)</div>
+          <button>View Details</button>
+        </div>
+
+        <div class="card">
+          <h3>Harvesting Service</h3>
+          <p>Skilled workers with modern tools to harvest crops on time.</p>
+          <div class="price">$15 / hour</div>
+          <div class="rating">⭐⭐⭐⭐⭐ (18)</div>
+          <button>View Details</button>
+        </div>
+
+        <div class="card">
+          <h3>Irrigation Setup</h3>
+          <p>Complete installation of drip or sprinkler systems for your farm.</p>
+          <div class="price">$300 / project</div>
+          <div class="rating">⭐⭐⭐⭐☆ (12)</div>
+          <button>View Details</button>
+        </div>
+
+        <div class="card">
+          <h3>Pest Control</h3>
+          <p>Eco-friendly pest management to protect your crops.</p>
+          <div class="price">$50 / visit</div>
+          <div class="rating">⭐⭐⭐☆☆ (9)</div>
+          <button>View Details</button>
+        </div>
+
+        <div class="card">
+          <h3>Machinery Rental</h3>
+          <p>Tractors and harvesting machines available on daily or hourly rental.</p>
+          <div class="price">$200 / day</div>
+          <div class="rating">⭐⭐⭐⭐⭐ (30)</div>
+          <button>View Details</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SmartFarm. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+
+</html>
