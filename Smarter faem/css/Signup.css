@@ -1,0 +1,72 @@
+/* ✅ Wrapper section */
+.wrapper {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+/* ✅ Heading style */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d6a4f;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ✅ Form styling */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 15px;
+}
+
+/* ✅ Label styling */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* ✅ Inputs */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border: 1px solid #2d6a4f;
+    outline: none;
+}
+
+/* ✅ Button */
+button {
+    background: #2d6a4f;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #1b4332;
+    transform: translateY(-2px);
+}
+
+/* ✅ Text under form */
+form p {
+    font-size: 14px;
+}
