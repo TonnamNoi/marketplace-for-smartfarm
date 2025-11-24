@@ -4,72 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - SmartFarm</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Signup.css">
+    <link rel="stylesheet" href="css/Signup.css"> <!-- ✅ ใช้แบบ Login Layout -->
 </head>
 <body>
 
-<!-- ✅ Navbar (ใช้เหมือนทุกหน้า) -->
-<nav class="navbar">
-    <div class="logo">SmartFarm</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Service.html">Services</a></li>
-        <li><a href="Post.html">Post a Job</a></li>
-        <li><a href="login.html">Login</a></li>
-    </ul>
-    <div class="menu-toggle">&#9776;</div>
-</nav>
+<div class="login-container">
+    <div class="login-box">
+        <h1>Create Account</h1>
+        
 
-<!-- ✅ Register Section -->
-<section class="wrapper">
-    <h2>Create an Account</h2>
+        <form>
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Enter first name">
+            </div>
 
-    <form>
-        <label>First Name</label>
-        <input type="text" placeholder="Enter first name">
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter last name">
+            </div>
 
-        <label>Last Name</label>
-        <input type="text" placeholder="Enter last name">
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter phone number">
+            </div>
 
-        <label>Phone Number</label>
-        <input type="text" placeholder="Enter phone number">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter email">
+            </div>
 
-        <label>Email</label>
-        <input type="email" placeholder="Enter email">
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password">
+            </div>
 
-        <label>Password</label>
-        <input type="password" placeholder="Enter password">
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm password">
+            </div>
 
-        <label>Confirm Password</label>
-        <input type="password" placeholder="Confirm password">
+            <div class="input-group">
+                <label>Register As</label>
+                <select>
+                    <option value="farmer">Farmer (Looking for service)</option>
+                    <option value="worker">Service Provider (Looking for job)</option>
+                </select>
+            </div>
 
-        <label>Register As</label>
-        <select>
-            <option value="farmer">Farmer (Looking for service)</option>
-            <option value="worker">Service Provider (Looking for job)</option>
-        </select>
+            <button type="submit" class="btn">Register</button>
 
-        <button type="submit">Register</button>
-
-        <p style="text-align:center; margin-top:10px;">
-            Already have an account? <a href="login.html" style="color:#2d6a4f; font-weight:bold;">Login</a>
-        </p>
-    </form>
-</section>
-
-<footer>
-    <p>&copy; 2025 SmartFarm</p>
-</footer>
-
-<script>
-    // ✅ Toggle Menu (Mobile)
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-    });
-</script>
+            <div class="back-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>

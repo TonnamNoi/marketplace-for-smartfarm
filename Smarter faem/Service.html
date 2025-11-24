@@ -10,22 +10,24 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <!-- Header -->
-    <header>
-      <nav class="navbar">
-        <div class="logo">SmartFarm</div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Service.html">Services</a></li>
-          <li><a href="Post.html">Post a Job</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-        <div class="menu-toggle">&#9776;</div>
-      </nav>
-    </header>
 
-    <!-- Services Section -->
+  <!-- 🔥 Navbar (เต็มจอ 100%) -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SmartFarm</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Service.html">Services</a></li>
+        <li><a href="Post.html">Post a Job</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- 🔥 Content ส่วนกลาง (ความกว้างจำกัด) -->
+  <div class="wrapper">
+
     <section>
       <h2>Browse Services</h2>
 
@@ -86,6 +88,7 @@
         </div>
       </div>
     </section>
+
   </div>
 
   <!-- Footer -->
@@ -93,14 +96,14 @@
     <p>&copy; 2025 SmartFarm. All rights reserved.</p>
   </footer>
 
-  <!-- Mobile Nav Toggle -->
   <script>
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav-links');
     toggle.addEventListener('click', () => {
-      nav.classList.toggle('show');
+      nav.classList.toggle('active'); // แก้จาก 'show' เป็น 'active'
     });
   </script>
+
 </body>
 
 </html>
