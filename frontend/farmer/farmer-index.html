@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Dashboard - SmartFarm</title>
+  <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SmartFarm</div>
+      <ul class="nav-links">
+        <li><a href="farmer-index.html" class="active">Dashboard</a></li>
+        <li><a href="farmer-post-job.html">Post Job</a></li>
+        <li><a href="farmer-profile.html">Profile</a></li>
+        <li><a href="farmer-login.html">Logout</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="dashboard">
+    <h1>Welcome, Farmer!</h1>
+    <p class="subtitle">Here's a quick overview of your farm jobs and applicants.</p>
+
+    <div class="dashboard-cards">
+      <div class="card">
+        <h3>Active Jobs</h3>
+        <p>5 jobs currently open</p>
+        <a href="farmer-manage-jobs.html" class="btn">View Jobs</a>
+      </div>
+
+      <div class="card">
+        <h3>New Applicants</h3>
+        <p>12 new applications</p>
+        <a href="farmer-applicants.html" class="btn">View Applicants</a>
+      </div>
+
+      <div class="card">
+        <h3>Payments Pending</h3>
+        <p>3 jobs waiting for payment</p>
+        <a href="farmer-payments.html" class="btn">Pay Now</a>
+      </div>
+
+      <div class="card">
+        <h3>Total Earnings</h3>
+        <p>$1,250 earned this month</p>
+        <a href="farmer-payments.html" class="btn">View Details</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SmartFarm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
+
+</body>
+</html>

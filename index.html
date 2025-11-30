@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartFarm - Choose Your Role</title>
+  <link rel="stylesheet" href="frontend/css/index.css">
+  <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">SmartFarm</div>
+      <ul class="nav-links">
+        <!-- <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li> -->
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="hero-role">
+    <h1>Welcome to SmartFarm</h1>
+    <p>Your partner platform that connects Employers and Farmers together.</p>
+
+    <div class="role-container">
+
+      <!-- Farmer -->
+      <a href="frontend/farmer/farmer-login.html" class="role-card farmer-card">
+        <div class="icon">🌾</div>
+        <h2>I'm a Farmer</h2>
+        <p>Find work nearby, connect with employers, and grow your income.</p>
+        <span class="btn-select">Enter</span>
+      </a>
+
+      <!-- Employer -->
+      <a href="frontend/Service/Service-login.html" class="role-card employer-card">
+        <div class="icon">🚜</div>
+        <h2>I'm an Employer</h2>
+        <p>Post jobs, hire workers, and manage your workforce with ease.</p>
+        <span class="btn-select">Enter</span>
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SmartFarm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
+
+</body>
+
+</html>
