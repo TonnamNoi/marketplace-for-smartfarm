@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicants - Farmer | SmartFarm</title>
+  <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SmartFarm</div>
+      <ul class="nav-links">
+        <li><a href="farmer-index.html">Dashboard</a></li>
+        <li><a href="farmer-post-job.html">Post Job</a></li>
+        <li><a href="farmer-manage-jobs.html">Manage Jobs</a></li>
+        <li><a href="farmer-payments.html">Payments</a></li>
+        <li><a href="farmer-profile.html">Profile</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="dashboard">
+    <h1>Applicants for Job: Fertilization for 5 acres</h1>
+    <p class="subtitle">View all workers who applied for this job.</p>
+
+    <div class="applicants-container">
+
+      <!-- Sample Applicant Card -->
+      <div class="applicant-card">
+        <div class="applicant-info">
+          <h2>John Doe</h2>
+          <p><strong>Service:</strong> Fertilization</p>
+          <p><strong>Location:</strong> Chachoengsao</p>
+          <p><strong>Rating:</strong> ⭐⭐⭐⭐☆ (24)</p>
+        </div>
+        <div class="applicant-actions">
+          <button class="btn accept">Accept</button>
+          <button class="btn decline">Decline</button>
+        </div>
+      </div>
+
+      <div class="applicant-card">
+        <div class="applicant-info">
+          <h2>Jane Smith</h2>
+          <p><strong>Service:</strong> Fertilization</p>
+          <p><strong>Location:</strong> Chachoengsao</p>
+          <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (30)</p>
+        </div>
+        <div class="applicant-actions">
+          <button class="btn accept">Accept</button>
+          <button class="btn decline">Decline</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="back-link">
+      <a href="farmer-manage-jobs.html">⬅ Back to Manage Jobs</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SmartFarm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
+
+</body>
+</html>

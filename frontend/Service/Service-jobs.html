@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Jobs - SmartFarm</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="Service.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SmartFarm</div>
+      <ul class="nav-links">
+        <li><a href="Service-index.html">Dashboard</a></li>
+        <li><a href="Service-profile.html">Profile</a></li>
+        <li><a href="Service-jobs.html" class="active">Browse Jobs</a></li>
+        <li><a href="Service-applicants.html">My Applications</a></li>
+        <li><a href="Service-login.html">Logout</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Browse Jobs Section -->
+  <section class="browse-jobs">
+    <h1>Available Jobs</h1>
+    <p>Find jobs posted by farmers near you.</p>
+
+    <!-- Filters -->
+    <div class="job-filters">
+      <input type="text" placeholder="Search by keyword...">
+      <select>
+        <option value="">All Categories</option>
+        <option value="fertilization">Fertilization</option>
+        <option value="harvesting">Harvesting</option>
+        <option value="irrigation">Irrigation</option>
+        <option value="pest-control">Pest Control</option>
+        <option value="machinery">Machinery Rental</option>
+      </select>
+      <select>
+        <option value="">All Locations</option>
+        <option value="district1">District 1</option>
+        <option value="district2">District 2</option>
+        <option value="district3">District 3</option>
+      </select>
+      <button>Search</button>
+    </div>
+
+    <!-- Jobs Grid -->
+    <div class="jobs-grid">
+      <div class="job-card">
+        <h3>Fertilization Job</h3>
+        <p>Location: District 1</p>
+        <p>Farmer: John Doe</p>
+        <p>Price: $100 / acre</p>
+        <button>Apply</button>
+      </div>
+
+      <div class="job-card">
+        <h3>Harvesting Service</h3>
+        <p>Location: District 2</p>
+        <p>Farmer: Mary Smith</p>
+        <p>Price: $15 / hour</p>
+        <button>Apply</button>
+      </div>
+
+      <div class="job-card">
+        <h3>Irrigation Setup</h3>
+        <p>Location: District 3</p>
+        <p>Farmer: Alice Brown</p>
+        <p>Price: $300 / project</p>
+        <button>Apply</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SmartFarm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
+
+</body>
+</html>

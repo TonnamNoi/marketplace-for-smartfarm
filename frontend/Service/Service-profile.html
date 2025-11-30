@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worker Profile - SmartFarm</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="Service.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SmartFarm</div>
+      <ul class="nav-links">
+        <li><a href="Service-index.html">Dashboard</a></li>
+        <li><a href="Service-profile.html" class="active">Profile</a></li>
+        <li><a href="Service-jobs.html">Browse Jobs</a></li>
+        <li><a href="Service-applicants.html">My Applications</a></li>
+        <li><a href="Service-login.html">Logout</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="worker-profile">
+    <h1>My Profile</h1>
+    <p>Update your personal information and showcase your services.</p>
+
+    <div class="profile-container">
+
+      <!-- Personal Info Form -->
+      <div class="profile-box">
+        <h2>Personal Information</h2>
+        <form>
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+          </div>
+
+          <div class="input-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="City / District">
+          </div>
+
+          <button type="submit" class="btn">Save Changes</button>
+        </form>
+      </div>
+
+      <!-- Services Offered -->
+      <div class="profile-box">
+        <h2>My Services</h2>
+        <form>
+          <div class="input-group">
+            <label for="service">Service Name</label>
+            <input type="text" id="service" placeholder="e.g., Harvesting, Irrigation">
+          </div>
+
+          <div class="input-group">
+            <label for="category">Category</label>
+            <select id="category">
+              <option value="fertilization">Fertilization</option>
+              <option value="harvesting">Harvesting</option>
+              <option value="irrigation">Irrigation</option>
+              <option value="pest-control">Pest Control</option>
+              <option value="machinery">Machinery Rental</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="price">Price (per unit)</label>
+            <input type="text" id="price" placeholder="$ / hour or $ / project">
+          </div>
+
+          <button type="submit" class="btn">Add Service</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SmartFarm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Jobs - Farmer | SmartFarm</title>
+  <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SmartFarm</div>
+      <ul class="nav-links">
+        <li><a href="farmer-index.html">Dashboard</a></li>
+        <li><a href="farmer-post-job.html">Post Job</a></li>
+        <li><a href="farmer-manage-jobs.html" class="active">Manage Jobs</a></li>
+        <li><a href="farmer-payments.html">Payments</a></li>
+        <li><a href="farmer-profile.html">Profile</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="dashboard">
+    <h1>Manage Your Jobs</h1>
+    <p class="subtitle">View all jobs you have posted and track their status.</p>
+
+    <div class="jobs-container">
+
+      <!-- Sample Job Card -->
+      <div class="job-card">
+        <div class="job-info">
+          <h2>Fertilization for 5 acres</h2>
+          <p><strong>Category:</strong> Fertilization</p>
+          <p><strong>Location:</strong> Chachoengsao</p>
+          <p><strong>Status:</strong> Active</p>
+        </div>
+        <div class="job-actions">
+          <a href="farmer-applicants.html" class="btn view-applicants">View Applicants</a>
+          <button class="btn edit-job">Edit</button>
+          <button class="btn delete-job">Delete</button>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-info">
+          <h2>Harvesting Corn</h2>
+          <p><strong>Category:</strong> Harvesting</p>
+          <p><strong>Location:</strong> Nakhon Pathom</p>
+          <p><strong>Status:</strong> Completed</p>
+        </div>
+        <div class="job-actions">
+          <a href="farmer-applicants.html" class="btn view-applicants">View Applicants</a>
+          <button class="btn edit-job" disabled>Edit</button>
+          <button class="btn delete-job">Delete</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SmartFarm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
+
+</body>
+</html>
